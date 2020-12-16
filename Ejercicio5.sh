@@ -1,3 +1,7 @@
 !#/bin/bash
 
-man $1
+if [ -n "$1" ]; then
+$1
+else
+echo "Ningun argumento ingresado"
+fi
